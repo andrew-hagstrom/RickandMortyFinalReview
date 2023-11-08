@@ -7,11 +7,14 @@ export const Header = () => {
   return (
     <>
       <Navbar
-        // fixed='top'
-        bg="dark"
-        data-bs-theme="dark"
-        expand="lg"
-        className="bg-body-tertiary"
+
+        // expand="lg" className="bg-body-tertiary" data-bs-theme='dark' bg='dark'
+      // fixed='top'
+      //   bg=""
+      //   data-bs-theme="dark"
+      //   expand="lg"
+      //   className="bg-body-tertiary"
+      id = 'navb'
       >
         <Container>
           <Navbar.Brand as={Link} to="/">Rick and Morty</Navbar.Brand>

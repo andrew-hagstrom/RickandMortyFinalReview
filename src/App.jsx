@@ -28,11 +28,6 @@ useEffect(() => {
 }, [myPage])
 
 
-  // useEffect(()=> {
-  //   console.log(favorites)
-  // }, [favorites])
-
-  
 
   return (
     <Container id="holder">

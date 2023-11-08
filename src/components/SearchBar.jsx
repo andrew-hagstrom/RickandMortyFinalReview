@@ -33,7 +33,7 @@ export const SearchBar = ({characters}) => {
     return (
     <>
         <div>
-            <input type="text" list="characters" onChange={(e) => handleChange(e)} />
+            <input id="input-search" type="text" list="characters" onChange={(e) => handleChange(e)} />
             <datalist id='characters'>
             {
             characters.map((char)=>(
@@ -41,9 +41,9 @@ export const SearchBar = ({characters}) => {
             ))
             }
             </datalist>
+            <Button style={{margin: "10px"}} onClick = {() => navigate (`/results/${id}`)}>Submit</Button>
         </div>
         
-        <Button style={{margin: "10px"}} onClick = {() => navigate (`/results/${id}`)}>Submit</Button>
     </>
     )
 }
